@@ -1,67 +1,70 @@
 //
 //  ContentView.swift
-//  NMAOktaTests
+//  OktaSignInTest
 //
-//  Created by Monica Rondón on 22.03.24.
+//  Created by Monica Rondón on 04.03.24.
 //  
 
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+
+    @ObservedObject var oktaManager: OktaManager
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+
+        NavigationStack {
+
+            VStack(spacing: 20) {
+
+                Text("Have an account?")
+                    .font(.title)
+                    .padding()
+
+                Button("Sign In") {
+
                 }
-                .onDelete(perform: deleteItems)
-            }
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                .buttonStyle(.borderedProminent)
+
+                Button("Sign In with a refresh token") { /*no-op*/ }
+                    .font(.subheadline)
+                    .padding()
+
+
+                Spacer()
+
+
+                HStack {
+                    Toggle("", isOn: $oktaManager.ephemeralSessionEnabled)
+                        .labelsHidden()
+                    Text("Ephemeral Session")
                 }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+
+                Text("Temporary Session")
+                    .font(.footnote)
+                    .italic()
+                    .foregroundStyle(.secondary)
+
+
+                HStack {
+                    Text("Client ID:")
+                    Text("xxx")
                 }
-            }
-        } detail: {
-            Text("Select an item")
+                .font(.caption2)
+
+            }.padding()
+                .navigationTitle("NMA Okta Test")
+
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
 }
 
+
+// MARK: - Previews
 #Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+    ContentView(oktaManager: OktaManager())
 }
+
+

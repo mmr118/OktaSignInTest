@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9767E95A2BADBEB900E8D515 /* NMAOktaTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E9592BADBEB900E8D515 /* NMAOktaTestsApp.swift */; };
-		9767E95C2BADBEB900E8D515 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E95B2BADBEB900E8D515 /* ContentView.swift */; };
 		9767E95E2BADBEB900E8D515 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E95D2BADBEB900E8D515 /* Item.swift */; };
 		9767E9602BADBEBA00E8D515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9767E95F2BADBEBA00E8D515 /* Assets.xcassets */; };
 		9767E9642BADBEBA00E8D515 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9767E9632BADBEBA00E8D515 /* Preview Assets.xcassets */; };
+		9767E96F2BADBF5800E8D515 /* OktaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E96B2BADBF5800E8D515 /* OktaManager.swift */; };
+		9767E9732BADBFC400E8D515 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E9722BADBFC400E8D515 /* ContentView.swift */; };
+		9767E9752BADC02F00E8D515 /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9767E9742BADC02900E8D515 /* Okta.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9767E9562BADBEB900E8D515 /* NMAOktaTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMAOktaTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9767E9592BADBEB900E8D515 /* NMAOktaTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMAOktaTestsApp.swift; sourceTree = "<group>"; };
-		9767E95B2BADBEB900E8D515 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9767E95D2BADBEB900E8D515 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9767E95F2BADBEBA00E8D515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9767E9612BADBEBA00E8D515 /* NMAOktaTests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NMAOktaTests.entitlements; sourceTree = "<group>"; };
 		9767E9632BADBEBA00E8D515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9767E96B2BADBF5800E8D515 /* OktaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OktaManager.swift; sourceTree = "<group>"; };
+		9767E9722BADBFC400E8D515 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9767E9742BADC02900E8D515 /* Okta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Okta.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		9767E9582BADBEB900E8D515 /* NMAOktaTests */ = {
 			isa = PBXGroup;
 			children = (
+				9767E9742BADC02900E8D515 /* Okta.plist */,
 				9767E9592BADBEB900E8D515 /* NMAOktaTestsApp.swift */,
-				9767E95B2BADBEB900E8D515 /* ContentView.swift */,
+				9767E9722BADBFC400E8D515 /* ContentView.swift */,
+				9767E96B2BADBF5800E8D515 /* OktaManager.swift */,
 				9767E95D2BADBEB900E8D515 /* Item.swift */,
 				9767E95F2BADBEBA00E8D515 /* Assets.xcassets */,
 				9767E9612BADBEBA00E8D515 /* NMAOktaTests.entitlements */,
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9767E9642BADBEBA00E8D515 /* Preview Assets.xcassets in Resources */,
+				9767E9752BADC02F00E8D515 /* Okta.plist in Resources */,
 				9767E9602BADBEBA00E8D515 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9767E95C2BADBEB900E8D515 /* ContentView.swift in Sources */,
+				9767E9732BADBFC400E8D515 /* ContentView.swift in Sources */,
+				9767E96F2BADBF5800E8D515 /* OktaManager.swift in Sources */,
 				9767E95E2BADBEB900E8D515 /* Item.swift in Sources */,
 				9767E95A2BADBEB900E8D515 /* NMAOktaTestsApp.swift in Sources */,
 			);
