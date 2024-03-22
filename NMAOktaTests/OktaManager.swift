@@ -1,6 +1,6 @@
 //
 //  OktaManager.swift
-//  OktaSignInTest
+//  NMAOktaTests
 //
 //  Created by Monica Rondón on 22.03.24.
 //  

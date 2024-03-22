@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  OktaSignInTest
+//  NMAOktaTests
 //
 //  Created by Monica Rondón on 04.03.24.
 //  
