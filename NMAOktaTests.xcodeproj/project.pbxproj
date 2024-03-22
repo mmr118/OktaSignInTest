@@ -20,7 +20,7 @@
 		9767E97E2BADC0DB00E8D515 /* WebAuthenticationUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9767E97D2BADC0DB00E8D515 /* WebAuthenticationUI */; };
 		9767E9802BADD06E00E8D515 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E97F2BADD06E00E8D515 /* LoginView.swift */; };
 		9767E9822BADD07A00E8D515 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E9812BADD07A00E8D515 /* ProfileView.swift */; };
-		9767E9842BADD1C700E8D515 /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E9832BADD1C700E8D515 /* ProfileDetailsView.swift */; };
+		9767E9842BADD1C700E8D515 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767E9832BADD1C700E8D515 /* UserInfoView.swift */; };
 		97F61E082BADE02C007C2613 /* HierarchicalLabeledContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F61E072BADE02C007C2613 /* HierarchicalLabeledContentStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		9767E9742BADC02900E8D515 /* Okta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Okta.plist; sourceTree = "<group>"; };
 		9767E97F2BADD06E00E8D515 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9767E9812BADD07A00E8D515 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		9767E9832BADD1C700E8D515 /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
+		9767E9832BADD1C700E8D515 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		97F61E072BADE02C007C2613 /* HierarchicalLabeledContentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalLabeledContentStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 				9767E9722BADBFC400E8D515 /* ContentView.swift */,
 				9767E97F2BADD06E00E8D515 /* LoginView.swift */,
 				9767E9812BADD07A00E8D515 /* ProfileView.swift */,
-				9767E9832BADD1C700E8D515 /* ProfileDetailsView.swift */,
+				9767E9832BADD1C700E8D515 /* UserInfoView.swift */,
 				97F61E072BADE02C007C2613 /* HierarchicalLabeledContentStyle.swift */,
 				9767E95D2BADBEB900E8D515 /* Item.swift */,
 				9767E95F2BADBEBA00E8D515 /* Assets.xcassets */,
@@ -181,7 +181,7 @@
 				9767E9732BADBFC400E8D515 /* ContentView.swift in Sources */,
 				9767E96F2BADBF5800E8D515 /* OktaManager.swift in Sources */,
 				9767E9822BADD07A00E8D515 /* ProfileView.swift in Sources */,
-				9767E9842BADD1C700E8D515 /* ProfileDetailsView.swift in Sources */,
+				9767E9842BADD1C700E8D515 /* UserInfoView.swift in Sources */,
 				97F61E082BADE02C007C2613 /* HierarchicalLabeledContentStyle.swift in Sources */,
 				9767E95E2BADBEB900E8D515 /* Item.swift in Sources */,
 				9767E9802BADD06E00E8D515 /* LoginView.swift in Sources */,
