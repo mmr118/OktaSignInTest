@@ -57,7 +57,7 @@ class OktaManager: ObservableObject {
     @Published private(set) var signedIn_profile: Bool = true
     @Published private(set) var loadingUserInfo: Bool = true
 
-    @Published private var userInfo: UserInfo?
+    @Published var userInfo: UserInfo?
     @Published private(set) var credential: Credential? {
         didSet { loadUserInfo(ifNeeded: credential != oldValue) }
     }
